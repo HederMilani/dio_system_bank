@@ -60,7 +60,12 @@ while True:
     option = input("Enter your option: ")
 
     if option == '1':
-        balance, withdrawal_count = withdrawal(balance, withdrawal_count, DAILY_WITHDRAWAL_LIMIT, MAX_WITHDRAWAL_LIMIT, extract)
+        balance, withdrawal_count = withdrawal(
+            balance,
+            withdrawal_count,
+            DAILY_WITHDRAWAL_LIMIT,
+            MAX_WITHDRAWAL_LIMIT,
+            extract)
         continue
     if option == '2':
         balance = deposit(balance, extract)
